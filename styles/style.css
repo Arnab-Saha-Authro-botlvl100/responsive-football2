@@ -194,6 +194,16 @@ header{
     width:80%;
     height: 415px;
 }
+.section-title{
+    color: #0a0a0a;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 80px;
+    margin-top:10px;
+    margin-bottom:30px;
+    border-bottom: 4px dotted black;
+}
 .social{
     margin-top:20px;
     margin-bottom: 20px;
@@ -216,7 +226,7 @@ header{
 .foot span{
     color:lightblue;
     letter-spacing: 2px;
-    opacity:0.8;
+    opacity:0.4;
 }
 .foot-container{
     width:90%;
@@ -224,6 +234,9 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.videos{
+    width:92%;
 }
 .address{
     color:gold;
@@ -466,5 +479,9 @@ header{
     }
     .login{
         margin-left: -1%;
+    }
+    iframe{
+        height:150px;
+        width:250px;
     }
 }
