@@ -68,6 +68,9 @@ header{
     font-size: 64px;
     line-height: 80px;
 }
+#gold{
+    color: gold;
+}
 .half-width{
     width:50%;
     padding-left: 3.5%;
@@ -91,6 +94,42 @@ header{
     transform: rotate(1080deg);
     margin-right: 8px;
 }
+.news-part{
+    margin-top:70px;
+}
+.news{
+    width:90%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.news-container{
+    padding:15px 15px;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    background-color:linen;
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.5)
+
+}
+.news-banner img{
+    width:395px;
+    height:300px;
+}
+.player-details{
+    margin-top:2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.short-news{
+    margin-top:-10px;
+    margin-bottom:0px;
+}
+
 @media only screen and (max-width:1230px){
     .banner-h1{
         color: #FFFFFF;
@@ -105,6 +144,64 @@ header{
         margin-top:67px;
         transform: scale(1);
         transition: transform 1s ease-in-out;
+    }
+}
+@media only screen and (max-width:1390px){
+    .banner-h1{
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 54px;
+        line-height: 80px;
+    }
+    .top-banner img{
+        width:90%;
+        margin-bottom: 86px;
+        margin-top:67px;
+        transform: scale(1);
+        transition: transform 1s ease-in-out;
+    }
+    .news{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .news-banner img{
+        width:505px;
+        height:400px;
+    }
+}
+@media only screen and (max-width:1160px){
+    .banner-h1{
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 54px;
+        line-height: 80px;
+    }
+    .top-banner img{
+        width:90%;
+        margin-bottom: 86px;
+        margin-top:67px;
+        transform: scale(1);
+        transition: transform 1s ease-in-out;
+    }
+    .news{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .news-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .player-details{
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left:10px;
+    }
+    .news-banner img{
+        width:485px;
+        height:247px;
     }
 }
 @media only screen and (max-width:960px) and (min-width:761px){
